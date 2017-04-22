@@ -1,6 +1,6 @@
 # npmtest-decimal.js
 
-#### basic test coverage for  decimal.js (v7.2.0)  [![npm package](https://img.shields.io/npm/v/npmtest-decimal.js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-decimal.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-decimal.js.svg)](https://travis-ci.org/npmtest/node-npmtest-decimal.js)
+#### basic test coverage for  [decimal.js (v7.2.0)](https://github.com/MikeMcl/decimal.js#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-decimal.js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-decimal.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-decimal.js.svg)](https://travis-ci.org/npmtest/node-npmtest-decimal.js)
 
 #### An arbitrary-precision Decimal type for JavaScript.
 
@@ -35,9 +35,22 @@
 ```json
 
 {
-    "name": "decimal.js",
+    "author": {
+        "name": "Michael Mclaughlin"
+    },
+    "bugs": {
+        "url": "https://github.com/MikeMcl/decimal.js/issues"
+    },
+    "dependencies": {},
     "description": "An arbitrary-precision Decimal type for JavaScript.",
-    "version": "7.2.0",
+    "devDependencies": {},
+    "directories": {},
+    "dist": {
+        "shasum": "abb95d934f527664256ba213087f013f3cdc4fdf",
+        "tarball": "https://registry.npmjs.org/decimal.js/-/decimal.js-7.2.0.tgz"
+    },
+    "gitHead": "2be14dfdd74a8b992c58999824efc9abd58240ad",
+    "homepage": "https://github.com/MikeMcl/decimal.js#readme",
     "keywords": [
         "arbitrary",
         "precision",
@@ -52,20 +65,26 @@
         "bigint",
         "bignum"
     ],
+    "license": "MIT",
+    "main": "decimal.js",
+    "maintainers": [
+        {
+            "name": "mikemcl"
+        }
+    ],
+    "module": "decimal.es6.js",
+    "name": "decimal.js",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/MikeMcl/decimal.js.git"
+        "url": "git+https://github.com/MikeMcl/decimal.js.git"
     },
-    "main": "decimal.js",
-    "module": "decimal.es6.js",
-    "author": {
-        "name": "Michael Mclaughlin"
-    },
-    "license": "MIT",
     "scripts": {
-        "test": "node ./test/test.js",
-        "build": "uglifyjs decimal.js --source-map doc/decimal.js.map -c -m -o decimal.min.js --preamble \"/* decimal.js v7.2.0 https://github.com/MikeMcl/decimal.js/LICENCE */\""
-    }
+        "build": "uglifyjs decimal.js --source-map doc/decimal.js.map -c -m -o decimal.min.js --preamble \"/* decimal.js v7.2.0 https://github.com/MikeMcl/decimal.js/LICENCE */\"",
+        "test": "node ./test/test.js"
+    },
+    "version": "7.2.0",
+    "bin": {}
 }
 ```
 
